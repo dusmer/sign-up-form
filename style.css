@@ -1,7 +1,7 @@
 @import url('assets/Norse-Bold.otf');
 
 body {
-    font-family: 'Norse Bold', sans-serif;
+    font-family: sans-serif;
     display:flex;
     margin: 0px;
     height:100%;
@@ -28,6 +28,7 @@ body {
     align-items: center;
     color:white;
     flex-wrap: wrap;
+    /*font-family: "Norse Bold";*/
     
     
 }
@@ -41,15 +42,13 @@ body {
 
 .container{
     display:flex;
-    justify-content: center;
-    gap:40px;
     flex-wrap: wrap;
 
 }
 
 .columns{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap:40px;
     flex-wrap: wrap;
@@ -63,4 +62,35 @@ body {
 .instructions{
     padding-top: 200px;
     background-color:rgba(0, 0, 0, 0.027);
+    font-size:24px;
+    padding-left: 35px;
+    padding-right: 135px;
+    font-weight: 900;
+    padding-bottom:40px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:35px;
+    box-shadow: 0px 10px rgba(248, 248, 248, 0.877);
+
+}
+
+.formLayout{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.formFields{
+    min-width:400px;
+
+
+}
+
+label{
+    text-transform:uppercase;
 }
