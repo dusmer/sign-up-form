@@ -1,4 +1,8 @@
-@import url('assets/Norse-Bold.otf');
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url("assets/Norse-Bold.otf") format("opentype");
+}
 
 body {
     font-family: sans-serif;
@@ -10,6 +14,7 @@ body {
 
 .vert-hero{
     display:flex;
+    flex-direction: column;
     background-image :url("images/main.jpg");
     background-size: cover;
     width:30%;
@@ -28,9 +33,17 @@ body {
     align-items: center;
     color:white;
     flex-wrap: wrap;
-    /*font-family: "Norse Bold";*/
+    font-family: "Norse Bold";
+    margin-botom:auto;
     
-    
+       
+}
+
+.credit{
+    margin-top:auto;
+    color:white;
+    display:flex;
+    justify-content: center;
 }
 .form-main{
     display:flex;
@@ -74,7 +87,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     padding:35px;
-    box-shadow: 0px 10px rgba(248, 248, 248, 0.877);
+    box-shadow: 0 5px 5px 4px rgb(0 0 0 / 10%);
 
 }
 
@@ -93,4 +106,38 @@ body {
 
 label{
     text-transform:uppercase;
+    font-size: 13px;
+}
+
+input[type=text]{
+    min-width:300px;
+    border-style: solid;
+    border-color: rgba(121, 119, 119, 0.233);
+    border-width: 1px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0px rgb(0 0 0 / 10%);
+    height:30px;
+
+}
+
+input[type=text]:focus{
+    border-color: rgb(1, 1, 241);
+    outline: none;
+
+}
+
+.submit{
+    padding: 50px;
+}
+button{
+    background-color: #596D48;
+    padding:10px 45px 10px 45px;
+    border-radius: 10px;
+    color:white;
+    font-size: 20px;
+    font-weight: 900;
+    border-style: solid;
+
+
 }
